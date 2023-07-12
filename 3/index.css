@@ -1,0 +1,53 @@
+body {
+    background: content-box radial-gradient(blue, skyblue);
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.background {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(0, 255, 72) 35%, rgb(0, 255, 208) 100%);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.container > * > * {
+    cursor: pointer;
+    transition: all .4s ease-out;
+    font-size: 8rem;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
