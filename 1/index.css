@@ -1,0 +1,43 @@
+.container {
+    padding: 25rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 30px;
+    width: 40vw;
+    height: 40vh;
+    font-size: 40px;
+    animation: rotate-effect 2s infinite;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    display: none;
+    background-color: red;
+}
+
+@keyframes rotate-effect {
+    0% {
+        transform: rotate(-0.01turn);
+    }
+    50% {
+        transform: rotate(0.01turn);
+    }
+    100% {
+        transform: rotate(-0.01turn);
+    }
+}
